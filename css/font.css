@@ -1,0 +1,25 @@
+@font-face{
+    font-family: 'AaManYuShouXieTi';
+    font-display: swap;
+    src: url('../fonts/AaManYuShouXieTi.ttf') format("truetype");
+}
+@font-face{
+    font-family: 'QingNiaoHuaGuangXiHeiYi';
+    font-display: swap;
+    src: url('../fonts/QingNiaoHuaGuangXiHeiYi.ttf') format("truetype");
+}
+@font-face{
+    font-family: 'XiaoKeNaiLaoTiShangYongMianFei';
+    font-display: swap;
+    src: url('../fonts/XiaoKeNaiLaoTiShangYongMianFei.ttf') format("truetype");
+}
+@font-face{
+    font-family: 'ZhaiZaiJiaZiDongBi';
+    font-display: swap;
+    src: url('../fonts/ZhaiZaiJiaZiDongBi.ttf') format("truetype");
+}
+@font-face{
+    font-family: 'CascadiaCode';
+    font-display: swap;
+    src: url('../fonts/CascadiaCode.ttf') format("truetype");
+}
