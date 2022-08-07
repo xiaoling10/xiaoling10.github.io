@@ -1601,7 +1601,7 @@ figure.highlight pre .javascript .function {
 }
 #article-container pre,
 #article-container code {
-  font-size: 5px;
+  font-size: 12px;
   font-family: CascadiaCode !important;
 }
 #article-container code {
