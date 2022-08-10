@@ -8,3 +8,8 @@
     font-display: swap;
     src: url('../fonts/CascadiaCode.ttf') format("truetype");
 }
+@font-face{
+    font-family: 'SourceHanSans-Normal';
+    font-display: swap;
+    src: url('../fonts/SourceHanSans-Normal.otf') format("truetype");
+}
