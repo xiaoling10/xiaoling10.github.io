@@ -64,33 +64,6 @@
     
     
     <entry>
-      <title>Hexo + Butterfly的搭建问题汇总</title>
-      <link href="/2022/08/05/tools/Hexo%20+%20Butterfly%20%E7%9A%84%E6%90%AD%E5%BB%BA%20%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
-      <url>/2022/08/05/tools/Hexo%20+%20Butterfly%20%E7%9A%84%E6%90%AD%E5%BB%BA%20%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/</url>
-      
-        <content type="html"><![CDATA[<div class="note info no-icon flat"><p>本文主要介绍在搭建Blog中遇到的问题和重点记录<br>框架：Hexo　　　主题：Butterfly</p></div><div class="note default no-icon flat"><p>Hexo搭建：<a href="https://zhuanlan.zhihu.com/p/102592286">https://zhuanlan.zhihu.com/p/102592286</a><br>主题设置：<a href="https://butterfly.js.org/">https://butterfly.js.org/</a></p></div><hr></hr><h2 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h2><p>这部分内容后期再更新</p><p>核心就是：遇到问题，一定要解决，哪怕是warm，不然后面会很多坑。</p><p>基本上所有问题都是可以在网上查到并解决。<br><br/></p><h3 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><h4 id="node-v-和-npm-v"><a href="#node-v-和-npm-v" class="headerlink" title="node -v 和 npm -v"></a>node -v 和 npm -v</h4><p>原作者在执行这两个命令时，除了版本信息外，是没有任何其余的提示信息的。<br>如果遇到其他信息，一定要尽可能解决掉再往下。<br><br/></p><h4 id="hexo-cli安装"><a href="#hexo-cli安装" class="headerlink" title="hexo-cli安装"></a>hexo-cli安装</h4><p>上一步不解决，问题同样会出现在这部分。<br>就是上面的问题解决了，这里依旧可能会有问题。<br>我这里遇到的是：需要执行一个命令：<br>    直接执行那个命令就好，如果不执行，下面的步骤会出问题。<br>    执行完之后，不要再回去执行安装命令了。<br>    接着执行下面的步骤就行。<br><br/><br><br/></p><h2 id="主题设置"><a href="#主题设置" class="headerlink" title="主题设置"></a>主题设置</h2><p>按照<code>Butterfly</code>基本都能设置好。</p><p>有空再更新吧，回头看也没什么更新的。<br><br/></p><h3 id="各个目录的内容"><a href="#各个目录的内容" class="headerlink" title="各个目录的内容"></a>各个目录的内容</h3><p><code>theme/_config.yml</code>: 大部分功能模块的增减都在这里设置。<br>　　　　　　　　　　　这些功能模块的简单设置也是在这里。<br><br/></p><h3 id="inject引入外部内容"><a href="#inject引入外部内容" class="headerlink" title="inject引入外部内容"></a>inject引入外部内容</h3><p>这里的根目录是source进入的那个目录。<br>各个资源要放在对应的目录下，不要再在对应目录下创建文件。这是两种不同的引用方式：<br>　　前者是可以直接在链接里引用。<br>　　后者还要引入目录。</p><p>source目录下创建文件夹，在被引用的时候可以用相对路径。<br><br/><br><br/></p><h2 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a>遗留问题</h2><div class="note primary no-icon flat"><p>以下几点是目前还没学会的内容，欢迎指教：<br>1、搭建的前三章都没有看，后期记得仔细看下有没有遗漏的地方。<br>2、彩色的菜单栏：<a href="https://blog.xmwpro.com/">https://blog.xmwpro.com/</a><br>3、评论功能还是不能用，点击授权也没问用。网上说现在大家都遇到这个问题了。</p></div>]]></content>
-      
-      
-      <categories>
-          
-          <category> 9　tool </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> Butterfly </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Scala-集合</title>
       <link href="/2022/08/05/Language/Scala/"/>
       <url>/2022/08/05/Language/Scala/</url>
@@ -112,6 +85,33 @@
             <tag> Scala </tag>
             
             <tag> Language </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo + Butterfly的搭建问题汇总</title>
+      <link href="/2022/08/05/tools/Hexo%20+%20Butterfly%20%E7%9A%84%E6%90%AD%E5%BB%BA%20%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+      <url>/2022/08/05/tools/Hexo%20+%20Butterfly%20%E7%9A%84%E6%90%AD%E5%BB%BA%20%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/</url>
+      
+        <content type="html"><![CDATA[<div class="note info no-icon flat"><p>本文主要介绍在搭建Blog中遇到的问题和重点记录<br>框架：Hexo　　　主题：Butterfly</p></div><div class="note default no-icon flat"><p>Hexo搭建：<a href="https://zhuanlan.zhihu.com/p/102592286">https://zhuanlan.zhihu.com/p/102592286</a><br>主题设置：<a href="https://butterfly.js.org/">https://butterfly.js.org/</a></p></div><hr></hr><h2 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h2><p>这部分内容后期再更新</p><p>核心就是：遇到问题，一定要解决，哪怕是warm，不然后面会很多坑。</p><p>基本上所有问题都是可以在网上查到并解决。<br><br/></p><h3 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><h4 id="node-v-和-npm-v"><a href="#node-v-和-npm-v" class="headerlink" title="node -v 和 npm -v"></a>node -v 和 npm -v</h4><p>原作者在执行这两个命令时，除了版本信息外，是没有任何其余的提示信息的。<br>如果遇到其他信息，一定要尽可能解决掉再往下。<br><br/></p><h4 id="hexo-cli安装"><a href="#hexo-cli安装" class="headerlink" title="hexo-cli安装"></a>hexo-cli安装</h4><p>上一步不解决，问题同样会出现在这部分。<br>就是上面的问题解决了，这里依旧可能会有问题。<br>我这里遇到的是：需要执行一个命令：<br>    直接执行那个命令就好，如果不执行，下面的步骤会出问题。<br>    执行完之后，不要再回去执行安装命令了。<br>    接着执行下面的步骤就行。<br><br/><br><br/></p><h2 id="主题设置"><a href="#主题设置" class="headerlink" title="主题设置"></a>主题设置</h2><p>按照<code>Butterfly</code>基本都能设置好。</p><p>有空再更新吧，回头看也没什么更新的。<br><br/></p><h3 id="各个目录的内容"><a href="#各个目录的内容" class="headerlink" title="各个目录的内容"></a>各个目录的内容</h3><p><code>theme/_config.yml</code>: 大部分功能模块的增减都在这里设置。<br>　　　　　　　　　　　这些功能模块的简单设置也是在这里。<br><br/></p><h3 id="inject引入外部内容"><a href="#inject引入外部内容" class="headerlink" title="inject引入外部内容"></a>inject引入外部内容</h3><p>这里的根目录是source进入的那个目录。<br>各个资源要放在对应的目录下，不要再在对应目录下创建文件。这是两种不同的引用方式：<br>　　前者是可以直接在链接里引用。<br>　　后者还要引入目录。</p><p>source目录下创建文件夹，在被引用的时候可以用相对路径。<br><br/><br><br/></p><h2 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a>遗留问题</h2><div class="note primary no-icon flat"><p>以下几点是目前还没学会的内容，欢迎指教：<br>1、搭建的前三章都没有看，后期记得仔细看下有没有遗漏的地方。<br>2、彩色的菜单栏：<a href="https://blog.xmwpro.com/">https://blog.xmwpro.com/</a><br>3、评论功能还是不能用，点击授权也没问用。网上说现在大家都遇到这个问题了。</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 9　tool </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Butterfly </tag>
             
         </tags>
       
