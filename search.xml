@@ -64,35 +64,6 @@
     
     
     <entry>
-      <title>Scala-集合</title>
-      <link href="/2022/08/05/Language/Scala/"/>
-      <url>/2022/08/05/Language/Scala/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 1　programming language </category>
-          
-          <category> Scala </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Scala </tag>
-            
-            <tag> Language </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hexo + Butterfly的搭建问题汇总</title>
       <link href="/2022/08/05/tools/Hexo%20+%20Butterfly%20%E7%9A%84%E6%90%AD%E5%BB%BA%20%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
       <url>/2022/08/05/tools/Hexo%20+%20Butterfly%20%E7%9A%84%E6%90%AD%E5%BB%BA%20%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/</url>
@@ -139,6 +110,35 @@
             <tag> tool </tag>
             
             <tag> markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Scala-集合</title>
+      <link href="/2022/08/05/Language/Scala/"/>
+      <url>/2022/08/05/Language/Scala/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 1　programming language </category>
+          
+          <category> Scala </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Scala </tag>
+            
+            <tag> Language </tag>
             
         </tags>
       
@@ -211,7 +211,7 @@
       <link href="/2022/08/05/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%9E%E6%97%B6/Spark/"/>
       <url>/2022/08/05/%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%AE%9E%E6%97%B6/Spark/</url>
       
-        <content type="html"><![CDATA[<h2 id="RDD"><a href="#RDD" class="headerlink" title="RDD"></a>RDD</h2><p>　官方文档：<a href="https://spark.apache.org/docs/latest/rdd-programming-guide.html">https://spark.apache.org/docs/latest/rdd-programming-guide.html</a></p><h3 id="一元RDD"><a href="#一元RDD" class="headerlink" title="一元RDD"></a>一元RDD</h3><!-- 流程图_开始 --><div class="note default no-icon flat"><div class="mermaid-wrap"><pre class="mermaid-src" hidden>  flowchart LR    RDD --&gt; transformation    RDD --&gt; collection        RDD --&gt; action    RDD --&gt; 不同RDD之间的转换    transformation -- 映射 --&gt; 映射{{map, flatMap}}    transformation -- 过滤 --&gt; 过滤{{filter, distinct}}    collection -- 集合 --&gt; 集合{{union, intersection, subtract, cartesian}}    action -- 取得元素 --&gt; 取得元素{{collect, take, top, takeOrdered}}    action -- 简单计算 --&gt; 简单计算{{count, countByValue, foreach}}    action -- 聚合 --&gt; 聚合{{reduce, fold, aggregate}}  </pre></div></div><!-- 流程图_结束 --><ul><li><p>映射</p></li><li><br/><br/></li></ul><h3 id="PairRDD"><a href="#PairRDD" class="headerlink" title="PairRDD"></a>PairRDD</h3><!-- 流程图_开始 --><div class="note default no-icon flat"><div class="mermaid-wrap"><pre class="mermaid-src" hidden>  flowchart LR    PairRDD --&gt; transformation    PairRDD --&gt; PairRDD_2        PairRDD --&gt; action    transformation -- 映射 --&gt; 映射{{mapValue, flatMapValue}}    transformation -- 过滤 --&gt; 过滤{{keys, values}}    transformation -- 聚合 --&gt; 聚合{{reduceByKey, groupByKey, combineByKey}}    transformation -- 排序 --&gt; 排序{{sortedByKey}}    PairRDD_2 -- 转化 --&gt; 转化{{subtractByKey, join, leftOuterJoin, rightOuterJoin, cogroup }}    action -- 取得元素 --&gt; 取得元素{{collectAsMap}}    action -- 简单计算 --&gt; 简单计算{{countByKey}}    action -- 查找 --&gt; 查找{{lookup}}  </pre></div></div><!-- 流程图_结束 --><br/><br/><br/>]]></content>
+        <content type="html"><![CDATA[<h2 id="RDD"><a href="#RDD" class="headerlink" title="RDD"></a>RDD</h2><p>　官方文档：<a href="https://spark.apache.org/docs/latest/rdd-programming-guide.html">https://spark.apache.org/docs/latest/rdd-programming-guide.html</a></p><h3 id="一元RDD"><a href="#一元RDD" class="headerlink" title="一元RDD"></a>一元RDD</h3><!-- 流程图_开始 --><div class="note default no-icon flat"><div class="mermaid-wrap"><pre class="mermaid-src" hidden>  flowchart LR    RDD --&gt; transformation    RDD --&gt; collection        RDD --&gt; action    RDD --&gt; 不同RDD之间的转换    transformation -- 映射 --&gt; 映射{{map, flatMap}}    transformation -- 过滤 --&gt; 过滤{{filter, distinct}}    transformation -- 排序 --&gt; 排序{{sorted}}    collection -- 集合 --&gt; 集合{{union, intersection, subtract, cartesian}}    action -- 取得元素 --&gt; 取得元素{{collect, take, top, takeOrdered}}    action -- 简单计算 --&gt; 简单计算{{count, countByValue, foreach}}    action -- 聚合 --&gt; 聚合{{reduce, fold, aggregate}}  </pre></div></div><!-- 流程图_结束 --><ul><li><p><strong>映射</strong></p></li><li><p><strong>过滤</strong></p><br/><br/></li></ul><h3 id="PairRDD"><a href="#PairRDD" class="headerlink" title="PairRDD"></a>PairRDD</h3><!-- 流程图_开始 --><div class="note default no-icon flat"><div class="mermaid-wrap"><pre class="mermaid-src" hidden>  flowchart LR    PairRDD --&gt; transformation    PairRDD --&gt; PairRDD_2        PairRDD --&gt; action    transformation -- 映射 --&gt; 映射{{mapValue, flatMapValue}}    transformation -- 过滤 --&gt; 过滤{{keys, values}}    transformation -- 聚合 --&gt; 聚合{{reduceByKey, groupByKey, combineByKey}}    transformation -- 排序 --&gt; 排序{{sortedByKey}}    PairRDD_2 -- 转化 --&gt; 转化{{subtractByKey, join, leftOuterJoin, rightOuterJoin, cogroup }}    action -- 取得元素 --&gt; 取得元素{{collectAsMap}}    action -- 简单计算 --&gt; 简单计算{{countByKey}}    action -- 查找 --&gt; 查找{{lookup}}  </pre></div></div><!-- 流程图_结束 --><br/><br/><br/>]]></content>
       
       
       <categories>
@@ -232,6 +232,37 @@
             <tag> Stream </tag>
             
             <tag> Spark </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hive</title>
+      <link href="/2022/08/05/%E5%A4%A7%E6%95%B0%E6%8D%AE/NSQL/Hive/"/>
+      <url>/2022/08/05/%E5%A4%A7%E6%95%B0%E6%8D%AE/NSQL/Hive/</url>
+      
+        <content type="html"><![CDATA[<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="窗口函数"><a href="#窗口函数" class="headerlink" title="窗口函数"></a>窗口函数</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 2　大数据 </category>
+          
+          <category> NSQL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 大数据 </tag>
+            
+            <tag> NSQL </tag>
+            
+            <tag> Hive </tag>
             
         </tags>
       
